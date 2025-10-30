@@ -4,17 +4,17 @@ import { Rocket, Calendar, MapPin } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-gray-950 text-white overflow-hidden">
-      <div className="absolute inset-0 opacity-60">
+    <section className="relative w-full min-h-[70vh] bg-gray-950 text-white overflow-hidden">
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
         <Spline
           scene="https://prod.spline.design/rsU8t7H8p1S3qv8L/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-950/40 via-gray-950/70 to-gray-950 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-950/40 via-gray-950/70 to-gray-950 pointer-events-none z-10" />
 
-      <div className="relative max-w-7xl mx-auto px-6 pt-28 pb-20">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 pt-28 pb-20">
         <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur px-4 py-2 border border-white/20">
           <Calendar className="w-4 h-4 text-emerald-400" />
           <span className="text-sm text-gray-200">Every Saturday • Online Sprints</span>
