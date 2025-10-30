@@ -1,7 +1,11 @@
 import React from 'react';
 import Hero from './components/Hero.jsx';
+import ProgramFlow from './components/ProgramFlow.jsx';
+import UpcomingHackNights from './components/UpcomingHackNights.jsx';
 import TopicsShowcase from './components/TopicsShowcase.jsx';
 import ProjectsShowcase from './components/ProjectsShowcase.jsx';
+import Testimonials from './components/Testimonials.jsx';
+import Stats from './components/Stats.jsx';
 import Partners from './components/Partners.jsx';
 
 export default function App() {
@@ -17,8 +21,10 @@ export default function App() {
             <span className="font-semibold tracking-tight">Saturday Hack Night</span>
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-white/70">
-            <a href="#topics" className="hover:text-white transition-colors">Topics</a>
+            <a href="#flow" className="hover:text-white transition-colors">Flow</a>
+            <a href="#upcoming" className="hover:text-white transition-colors">Upcoming</a>
             <a href="#projects" className="hover:text-white transition-colors">Projects</a>
+            <a href="#testimonials" className="hover:text-white transition-colors">Feedback</a>
             <a href="#partners" className="hover:text-white transition-colors">Partners</a>
             <a href="https://tinkerhub.org" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">About</a>
           </nav>
@@ -28,8 +34,12 @@ export default function App() {
       {/* Main sections */}
       <main>
         <Hero />
+        <ProgramFlow />
+        <UpcomingHackNights />
         <TopicsShowcase />
         <ProjectsShowcase />
+        <Testimonials />
+        <Stats />
         <Partners />
       </main>
 
@@ -40,8 +50,9 @@ export default function App() {
             © {new Date().getFullYear()} TinkerHub Foundation · Saturday Hack Night
           </p>
           <div className="flex items-center gap-4">
+            <a className="hover:text-white transition-colors" href="#upcoming">Register</a>
             <a className="hover:text-white transition-colors" href="#projects">Showcase</a>
-            <a className="hover:text-white transition-colors" href="#topics">Topics</a>
+            <a className="hover:text-white transition-colors" href="#flow">How it works</a>
             <a className="hover:text-white transition-colors" href="#partners">Partners</a>
           </div>
         </div>
